@@ -3,13 +3,13 @@
 as we all know there is no `localStorage` on the server side on nodejs, is functionality witch is available on the browser in the object `window`.
 this module gives you the same apporche like you where using the localstorage from the browser.
 hope you enjoy and help full.
-<!-- # intallation
+# intallation
 
 ```bash
     npm install localstorage
-``` -->
+```
 
-<!-- # Integration
+# Integration
 ```javascript
     const localstorage = require('localstorage');
 
@@ -29,6 +29,6 @@ hope you enjoy and help full.
         console.log('delete user ID');
         localStorage.clear();
     }
-``` -->
+```
 
 # Enjoy
