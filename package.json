@@ -1,0 +1,23 @@
+{
+  "name": "localstorage",
+  "version": "0.0.1",
+  "description": "\"local storage work as local storage on the browser\"",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "localstorage",
+    "local storage",
+    "localstorage for node",
+    "node localstorage",
+    "local storage",
+    "server localstorage",
+    "server storage",
+    "storage server",
+    "localstorage server"
+  ],
+  "author": "Boss Ibrahim Mussa",
+  "license": "MIT"
+}
