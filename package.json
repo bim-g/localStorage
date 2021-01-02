@@ -1,6 +1,6 @@
 {
   "name": "localstorage4node",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "local storage work as local storage on the browser",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
