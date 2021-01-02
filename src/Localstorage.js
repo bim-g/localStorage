@@ -1,35 +1,43 @@
-const {writeFile,existsSync,readFileSync,unlink} = require('fs');
-class Localstorage {
-    constructor(){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var _a = require('fs'), writeFile = _a.writeFile, existsSync = _a.existsSync, readFileSync = _a.readFileSync, unlink = _a.unlink;
+var Localstorage = /** @class */ (function () {
+    // public length:number;
+    function Localstorage() {
         if (existsSync("localstorage.json")) {
             console.log("...loading data from localstorage");
-            let text = readFileSync("localstorage.json");
-            this.items=JSON.parse(text);
-        }else{
-            this.items={};
-        }            
+            var text = readFileSync("localstorage.json", "utf-8");
+            console.log(text);
+            this.items = JSON.parse(text);
+        }
+        else {
+            this.items = {};
+        }
     }
-    get length(){
-        return Object.keys(this.items).length;
-    }
-
-    setItem(key,value){
-        this.items[key]=value;
-        writeFile("localstorage.json",JSON.stringify(this.items),err=>{
-            if(err){
+    Object.defineProperty(Localstorage.prototype, "length", {
+        get: function () {
+            return Object.keys(this.items).length;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Localstorage.prototype.setItem = function (key, value) {
+        this.items[key] = value;
+        writeFile("localstorage.json", JSON.stringify(this.items), function (err) {
+            if (err) {
                 console.error(err);
             }
         });
-    }
-    getItem(key){
+    };
+    Localstorage.prototype.getItem = function (key) {
         return this.items[key];
-    }
-    clear(){
-        this.items={};
-        unlink("localstorage.json", () => {
+    };
+    Localstorage.prototype.clear = function () {
+        this.items = {};
+        unlink("localstorage.json", function () {
             console.log("localstorage File removed...");
         });
-    }
-
-}
-module.exports = new Localstorage();
+    };
+    return Localstorage;
+}());
+exports.default = new Localstorage();

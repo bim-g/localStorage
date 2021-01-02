@@ -1,18 +1,12 @@
-const localStorage = require('../src');
-
-console.log("localStorage length: ", localStorage.length);
-
-let UI_D = localStorage.getItem("user_id");
-
-console.log("user_id: ", UI_D);
-
-if (!UI_D) {
-    console.log('user ID not found!','Setting the user id and token...');
-    localStorage.setItem("user_id", "123456");
-    localStorage.setItem("username", "johnDoe");
-    localStorage.setItem("token", "Qw3rT5yui8oPlkjHg0fDsa");
-} else {
-    console.log('user ID:', UI_D);
-    console.log('delete user ID');
-    localStorage.clear();
-}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var src_1 = require("../src");
+console.log("start with localstorage test in ts");
+var UI = src_1.default.getItem("userid");
+console.log("ui", UI);
+src_1.default.setItem("userid", "12345");
+src_1.default.setItem("username", "ibrahim");
+src_1.default.setItem("token", "1awDrgyJ2ZscFvHNk");
+console.log("setting user id");
+UI = src_1.default.getItem("userid");
+console.log("ui", UI);
