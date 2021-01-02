@@ -11,7 +11,7 @@ hope you enjoy and help full.
 
 # Integration
 ```javascript
-    const localstorage = require('localstorage');
+    const localstorage = require('localstorage4node');
 
     console.log("localStorage length: ", localStorage.length);
 
