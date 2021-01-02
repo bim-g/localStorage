@@ -1,11 +1,16 @@
 {
   "name": "localstorage4node",
   "version": "0.0.2",
-  "description": "\"local storage work as local storage on the browser\"",
-  "main": "./src/index.js",
+  "description": "local storage work as local storage on the browser",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "start": "node index.js",
-    "test": "node ./test/test.js"
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "test": "tsc -t es5 ./test/test.ts && node ./test/test.js",
+    "prepublish": "npm run tsc"
   },
   "keywords": [
     "localstorage",
@@ -33,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/bim-g/localstorage4node/issues"
   },
-  "homepage": "https://github.com/bim-g/localstorage4node#readme"
+  "homepage": "https://github.com/bim-g/localstorage4node#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.19"
+  }
 }
