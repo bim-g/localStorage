@@ -1,15 +1,21 @@
 {
-  "name": "localstorage",
-  "version": "0.0.1",
+  "name": "localstorage4node",
+  "version": "0.0.2",
   "description": "\"local storage work as local storage on the browser\"",
   "main": "./src/index.js",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "test": "node ./test/test.js"
   },
   "keywords": [
     "localstorage",
+    "localstorage4node",
+    "localstorage 4 node",
+    "localstorage for node",
     "local storage",
+    "node local storage",
+    "node localstorage",
+    "localstorage node",
     "localstorage for node",
     "node localstorage",
     "local storage",
@@ -18,6 +24,14 @@
     "storage server",
     "localstorage server"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bim-g/localstorage4node.git"
+  },
   "author": "Boss Ibrahim Mussa",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bim-g/localstorage4node/issues"
+  },
+  "homepage": "https://github.com/bim-g/localstorage4node#readme"
 }
