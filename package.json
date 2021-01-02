@@ -9,6 +9,8 @@
   ],
   "scripts": {
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "es5": "node ./test/test_cjs.js",
+    "tst": "npm run test-es5",
     "test": "tsc -t es5 ./test/test.ts && node ./test/test.js",
     "prepublish": "npm run tsc"
   },

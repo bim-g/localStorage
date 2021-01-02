@@ -7,7 +7,7 @@ class Localstorage {
     constructor(){
         if (existsSync("localstorage.json")) {
             console.log("...loading data from localstorage");
-            const text = readFileSync("localstorage.json");
+            const text = readFileSync("localstorage.json","utf-8");
             this.items=JSON.parse(text);
         }else{
             this.items={};

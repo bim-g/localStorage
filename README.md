@@ -10,9 +10,17 @@ hope you enjoy and help full.
 ```
 
 # Integration
+    * `import` or `require`
 ```javascript
-    const localstorage = require('localstorage4node');
+    // if you are using es5 or les
+    const store = require('localstorage4node');
+    const localstorage=store.default;
 
+    // for es6 and above
+    import localstorage from "localstorage4node";
+```
+then you can access defined module
+```javascript  
     console.log("localStorage length: ", localStorage.length);
 
     let UI_D = localStorage.getItem("user_id");

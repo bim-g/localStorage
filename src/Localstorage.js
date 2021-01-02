@@ -6,7 +6,8 @@ var Localstorage = /** @class */ (function () {
     function Localstorage() {
         if (existsSync("localstorage.json")) {
             console.log("...loading data from localstorage");
-            var text = readFileSync("localstorage.json");
+            var text = readFileSync("localstorage.json", "utf-8");
+            console.log(text);
             this.items = JSON.parse(text);
         }
         else {
