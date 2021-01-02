@@ -1,16 +1,15 @@
 # Localstroge
 
-* localstarage 
-`localstarage` as we all know thre is no localstarage on the server side of nodejs.
+as we all know there is no `localStorage` on the server side on nodejs, is functionality witch is available on the browser in the object `window`.
 this module gives you the same apporche like you where using the localstorage from the browser.
-
-# intallation
+hope you enjoy and help full.
+<!-- # intallation
 
 ```bash
     npm install localstorage
-```
+``` -->
 
-# Integration
+<!-- # Integration
 ```javascript
     const localstorage = require('localstorage');
 
@@ -30,6 +29,6 @@ this module gives you the same apporche like you where using the localstorage fr
         console.log('delete user ID');
         localStorage.clear();
     }
-```
+``` -->
 
 # Enjoy
