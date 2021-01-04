@@ -1,6 +1,6 @@
-# Localstroge
+# Localstroge4node
 
-as we all know there is no `localStorage` on the server side on nodejs, is functionality witch is available on the browser in the object `window`.
+`localStorage` is not available on the server side with nodejs, is functionality witch is available on the browser in the object `window`.
 this module gives you the same apporche like you where using the localstorage from the browser.
 hope you enjoy and help full.
 # intallation
